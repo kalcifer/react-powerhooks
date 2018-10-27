@@ -5,7 +5,7 @@ export default ({ initialValue, children }) => {
   const [value, toggle] = useToggle(initialValue);
   return (
     <label>
-      <input type="checkbox" onChange={toggle} />
+      <input type="checkbox" onChange={toggle} checked={value} />
       {children}
     </label>
   );
