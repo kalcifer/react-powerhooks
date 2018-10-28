@@ -1,13 +1,19 @@
 <div align="center">
   <img src="/hook.png" height="40px" alt="React PowerHooks" />
-  <span> react-powerhooks </span>
+  <span fontSize='20px'> react-powerhooks </span>
 </div>
 
 <br />
 
-**WIP**
+> ⚠️ Warning: hooks are not part of a stable React release yet, so use this library only for experiments
 
 [Demo](https://codesandbox.io/s/j31y1l90m3)
+
+### Install
+
+```bash
+yarn add react-powerhooks
+```
 
 ### About
 
