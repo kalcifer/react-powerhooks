@@ -1,6 +1,7 @@
-<h1 align="center">
-  <img src="/hook.png" alt="React PowerHooks" />
-</h1>
+<div align="center">
+  <img src="/hook.png" height="40px" alt="React PowerHooks" />
+  <span> react-powerhooks </span>
+</div>
 
 <br />
 
