@@ -47,3 +47,17 @@ const ref = useRef(null); // Use the ref in the element concerned.
 // More about useRef here https://reactjs.org/docs/hooks-reference.html#useref
 const activeValue = useActive({ refEl: ref });
 ```
+
+#### useInterval
+
+This hook starts an interval timer that can be stopped/resumed any time.
+It takes in `startImmediate` which decides whether the interval is on by default.
+It also takes a `time` which is the interval duration.
+
+It provides a `start` and `stop` method which allow us to control the state of the interval.
+
+_Usage_
+
+```jsx
+const { start, stop } = useInterval({ time, startImmediate });
+```
