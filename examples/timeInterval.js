@@ -1,11 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import useInterval from "../src/interval";
 
-export default ({ startImmediate = true, time = 1000 }) => {
-  const { start, stop } = useInterval({ time, startImmediate });
+export default () => {
+  const [time, setTime] = useState(null);
+  const { start, stop } = useInterval({
+    duration: 1000,
+    startImmediate: false,
+    callback: () => {
+      setTime(new Date().toLocaleTimeString());
+    }
+  });
+
   return (
     <Fragment>
-      <div>The time is now {new Date().toLocaleTimeString()}</div>
+      <div>The time is now {time}</div>
       <button onClick={() => stop()}>Stop interval</button>
       <button onClick={() => start()}>Start interval</button>
     </Fragment>

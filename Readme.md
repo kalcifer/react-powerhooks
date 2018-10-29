@@ -59,5 +59,20 @@ It provides a `start` and `stop` method which allow us to control the state of t
 _Usage_
 
 ```jsx
-const { start, stop } = useInterval({ time, startImmediate });
+const [time, setTime] = useState(null);
+const { start, stop } = useInterval({
+  duration: 1000,
+  startImmediate: false,
+  callback: () => {
+    setTime(new Date().toLocaleTimeString());
+  }
+});
+
+return (
+  <Fragment>
+    <div>The time is now {time}</div>
+    <button onClick={() => stop()}>Stop interval</button>
+    <button onClick={() => start()}>Start interval</button>
+  </Fragment>
+);
 ```
