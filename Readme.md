@@ -7,7 +7,9 @@
 
 > ⚠️ Warning: hooks are not part of a stable React release yet, so use this library only for experiments
 
-[Demo](https://codesandbox.io/s/j31y1l90m3)
+### Demo
+
+![Edit react-powerhooks example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/j31y1l90m3)
 
 ### Install
 
