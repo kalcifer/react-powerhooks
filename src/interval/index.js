@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 
-export default ({ startImmediate, time }) => {
+export default ({ startImmediate, time, cb }) => {
   const [count, updateCount] = useState(0);
   const [intervalState, setIntervalState] = useState(
     startImmediate === undefined ? true : startImmediate
@@ -10,7 +10,10 @@ export default ({ startImmediate, time }) => {
   useEffect(
     () => {
       if (intervalState) {
-        const intervalId = setInterval(() => updateCount(count + 1), time);
+        const intervalId = setInterval(() => {
+          updateCount(count + 1);
+          cb();
+        }, time);
         setIntervalId(intervalId);
       }
 
@@ -24,7 +27,6 @@ export default ({ startImmediate, time }) => {
     [intervalState, intervalId]
   );
   return {
-    intervalId,
     start: useCallback(() => {
       setIntervalState(true);
     }),

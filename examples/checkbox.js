@@ -1,5 +1,5 @@
 import React from "react";
-import { useToggle } from "../";
+import useToggle from "../src/toggle";
 
 export default ({ initialValue, children }) => {
   const [value, toggle] = useToggle(initialValue);
