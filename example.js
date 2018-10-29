@@ -7,7 +7,6 @@ import TimeInterval from "./examples/timeInterval";
 const changeFn = val => console.log(`It changed to ${val}`);
 
 function App() {
-  console.log("here");
   return (
     <div className="App">
       <div className="section">

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 export default ({ onChange, refEl }) => {
   const [value, setValue] = useState(false);
   const handleMouseDown = () => {
-    console.log("here");
     setValue(true);
     onChange(true);
   };

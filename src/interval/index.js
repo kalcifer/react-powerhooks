@@ -19,7 +19,6 @@ export default ({ startImmediate, duration, callback }) => {
 
       return () => {
         if (intervalId) {
-          debugger;
           clearInterval(intervalId);
           setIntervalId(null);
         }
@@ -30,11 +29,9 @@ export default ({ startImmediate, duration, callback }) => {
   return {
     intervalId,
     start: () => {
-      console.log(intervalId);
       setIntervalState(true);
     },
     stop: () => {
-      console.log(intervalId);
       setIntervalState(false);
     }
   };

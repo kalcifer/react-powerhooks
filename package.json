@@ -1,6 +1,6 @@
 {
   "name": "react-powerhooks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Hooks api for common powerplugs",
   "author": "pkodmad",
   "license": "MIT",
@@ -20,8 +20,9 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "example": "parcel example.html"
   },
-  "dependencies": {
-    "react": "^16.7.0-alpha.0"
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "16.7.0-alpha.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -41,7 +42,6 @@
     "eslint-plugin-standard": "^3.1.0",
     "parcel": "^1.10.3",
     "react-scripts": "^1.1.4",
-    "react-dom": "16.7.0-alpha.0",
     "react-testing-library": "^5.2.3",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",
