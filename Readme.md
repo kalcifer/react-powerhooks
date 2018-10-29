@@ -78,3 +78,22 @@ return (
   </Fragment>
 );
 ```
+
+#### useMap
+
+This hook allows you to use a map object and get methods to manipulate the map.
+Takes an `initialValue`
+
+_Usage_
+
+```jsx
+const {
+  set: setKey,
+  get: getKey,
+  has,
+  delete: deleteKey,
+  clear,
+  reset,
+  values
+} = useMap({ name: "PK", age: "30", occupation: "Reactor" });
+```

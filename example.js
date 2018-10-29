@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import Checkbox from "./examples/checkbox";
 import CheckActive from "./examples/checkActive";
 import TimeInterval from "./examples/timeInterval";
+import DisplayMap from "./examples/displayMap";
 
 const changeFn = val => console.log(`It changed to ${val}`);
 
@@ -20,6 +21,9 @@ function App() {
 
       <div className="section">
         <TimeInterval />
+      </div>
+      <div className="section">
+        <DisplayMap />
       </div>
     </div>
   );
