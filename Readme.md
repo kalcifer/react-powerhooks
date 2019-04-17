@@ -9,7 +9,7 @@
 
 ### Demo
 
-![Edit react-powerhooks example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/j31y1l90m3)
+[![Edit react-powerhooks example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/j31y1l90m3)
 
 ### Install
 
